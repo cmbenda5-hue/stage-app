@@ -16,9 +16,15 @@ export const metadata: Metadata = {
   title: "Tradefair",
   description: "Le réseau des étudiant·es et de leurs stages",
   icons: {
-    icon: "/tradefair-icon.png?v=2",
+    icon: [
+      {
+        url: "/tradefair-icon.png?v=3",
+        type: "image/png",
+      },
+    ],
   },
 };
+
 
 
 export default function RootLayout({
