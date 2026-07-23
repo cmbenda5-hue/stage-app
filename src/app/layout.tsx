@@ -16,11 +16,14 @@ export const metadata: Metadata = {
   title: "Tradefair",
   description: "Le réseau des étudiant·es et de leurs stages",
   icons: {
-    icon: "/icon.png",
+    icon: [
+      {
+        url: "/icon.png",
+        type: "image/png",
+      },
+    ],
   },
 };
-
-
 
 export default function RootLayout({
   children,
@@ -28,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="fr" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>{children}</body>
     </html>
   );
