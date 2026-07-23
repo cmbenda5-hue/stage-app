@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tradefair",
   description: "Le réseau des étudiant·es et de leurs stages",
+  icons: {
+    icon: "/icon.png",
+  },
 };
+
 
 
 export default function RootLayout({
